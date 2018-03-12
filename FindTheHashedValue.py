@@ -10,7 +10,7 @@ while found != True:
     for value in itertools.product(string, repeat=length):
         for c in list(value):
             Actual = Actual + c
-        hashed = hashlib.md5(Actual.encode()).hexdigest()
+        hashed = hashlib.md5(Actual.encode()).hexdigest() #This is currently an MD5 hash but can be changed to be any other that is included in the hashlib module
         if hashed == x:
             print(Actual)
             found = True
