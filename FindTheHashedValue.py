@@ -4,9 +4,9 @@ x = input("Enter the value: ")
 found = False
 length = 0
 string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 !£$%^&*()_+-={}[]:;@'~#<,>.?/|"
+Actual = ""
 while found != True:
     length = length + 1
-    Actual = ""
     for value in itertools.product(string, repeat=length):
         for c in list(value):
             Actual = Actual + c
